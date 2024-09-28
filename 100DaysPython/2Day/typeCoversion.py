@@ -21,6 +21,20 @@ print(int("123") + int("456"))
 # float()
 # str()
 # bool()
+age = 6
+isStudent = True
+agetofloat = float(age)
+agetostring = str(age)
+booltostring = str(isStudent)
+booltoint = int(isStudent)
+
+print(type(age))
+print(type(isStudent))
+print(type(agetofloat))
+print(type(agetostring))
+print(type(booltostring))
+print(type(booltoint))
+
 
 ### Exercise 
 
