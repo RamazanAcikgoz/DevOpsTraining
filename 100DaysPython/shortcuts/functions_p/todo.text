@@ -1,0 +1,52 @@
+def print_todo(todo):
+  2     """
+  3     print_todo takes in a todo dictionary and prints it out
+  4     with by separating the `name` from the `body` using a colon (:).
+  5
+  6     >>> todo = {'name': 'Example 1', 'body': 'This is a test task', 'points': '3'}
+  7     >>> print_todo(todo)
+  8     Example 1: This is a test task
+  9     >>>
+ 10     """
+ 11     print(f"{todo['name']}: {todo['body']}")
+ 12
+ 13 def take_first(todos):
+ 14     """
+ 15     take_first receives a list of todos and removes the first todo
+ 16     and returns that todo and the remaining todos in a touple
+ 17
+ 18     >>> todos = [{'name': 'Example 1', 'body': 'This is a test task', 'points': '3'},
+ 19     ... {'name': 'Task 2', 'body': 'Yet another example task', 'points': '2'}]
+ 20     >>> todo, todos = take_first(todos)
+ 21     >>> todo
+ 22     {'name': 'Example 1', 'body': 'This is a test task', 'points': '3'}
+ 23     >>> todos
+ 24     [{'name': 'Task 2', 'body': 'Yet another example task', 'points': '2'}]
+ 25     >>> todos = []
+ 26     >>> take_first(todos)
+ 27     (None, [])
+ 28     """
+ 29     if todos:
+ 30         todo = todos.pop(0)
+ 31         return (todo, todos)
+ 32     else:
+ 33         return (None, [])
+ 34
+ 35
+ 36 def sum_points(todos):
+ 37     """
+ 38     sum_points receives two todo dictionaries and returns sum of their `point` values.
+ 39
+ 40     >>> todos = [{'name': 'Example 1', 'body': 'This is a test task', 'points': '3'},
+ 41     ... {'name': 'Task 2', 'body': 'Yet another example task', 'points': '2'},
+ 42     ... {'name': 'Task 3', 'body': 'Third task', 'points': '5'}]
+ 43     >>> sum_points(todos)
+ 44     10
+ 45     """
+ 46     total = 0
+ 47     for todo in todos:
+ 48         total += int(todo['points'])
+ 49     return total
+~
+~
+~

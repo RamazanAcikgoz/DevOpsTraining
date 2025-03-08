@@ -1,0 +1,23 @@
+Working Directory
+
+git status : It will show the files which are not staging area
+
+git add 'Filename' : It will add the file into staging area
+
+The files in staging area are ready to commit
+
+git commit -m(message) "Hello" : As message use present tense (best practice)
+
+Git Repository
+
+Working Directory (git add) --> Staging Area (git commit) -> Git repository  (git checkout)
+
+Git checkout : It will revert back roll back last position on local repository
+
+Git diff filename filename : It will check the differences
+
+---------------------------------------------------------------------------------------------------------------------
+git remote add origin https://github.com/rrr
+git branch -M main
+git push -u origin main
+

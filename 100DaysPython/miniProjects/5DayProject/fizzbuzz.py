@@ -4,12 +4,18 @@
 # When number is divisble by 5, then insteas of printing the number it should print "Buzz"
 # When the number is divisible by both 3 and 5, then instead of printing the number it should print "FizzBuzz"
 
-for number in range(1, 101):
-    if number % 3 == 00 and number % 5 == 00:
-        print("FizzBuzz")
-    elif number % 5 == 0:
-        print("Buzz")
-    elif number % 3 == 00:
-        print("Fizz")
-    else:
-        print(number)
+def fizz_buzz(target):
+    nums = []
+    for number in range(1, target + 1):
+        if number % 3 == 0 and number % 5 == 0:
+            nums.append("FizzBuzz")
+        elif number % 3 == 0:
+            nums.append("Fizz")
+        elif number % 5 == 0:
+            nums.append("Buzz")
+        else:
+            nums.append(number)
+            print(nums)
+
+
+fizz_buzz(15)

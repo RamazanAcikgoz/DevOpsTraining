@@ -1,0 +1,7 @@
+# Database backup tool
+# Author: [Ramazan Acikgoz]
+# Date: [10.01.2025]
+# Version: 1.0
+# PG Backup
+
+# pgbackup postgres://username@ip:port/db_name --driver s3(or local) bucketname(/path/to/file)
