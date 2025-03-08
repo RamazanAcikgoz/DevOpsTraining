@@ -8,16 +8,25 @@ The files in staging area are ready to commit
 
 git commit -m(message) "Hello" : As message use present tense (best practice)
 
-Git Repository
+Local repository
 
-Working Directory (git add) --> Staging Area (git commit) -> Git repository  (git checkout)
+Working Directory (git add) --> Staging Area (git commit) -> Git repository  (git checkout) -> Git Repository
 
 Git checkout : It will revert back roll back last position on local repository
 
 Git diff filename filename : It will check the differences
 
 ---------------------------------------------------------------------------------------------------------------------
-git remote add origin https://github.com/rrr
+or create a new repository on the command line
+echo "# DevOpsTraining" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
 git branch -M main
+git remote add origin https://github.com/RamazanAcikgoz/DevOpsTraining.git
 git push -u origin main
 
+or push an existing repository from the command line
+git remote add origin https://github.com/RamazanAcikgoz/DevOpsTraining.git
+git branch -M main
+git push -u origin main
