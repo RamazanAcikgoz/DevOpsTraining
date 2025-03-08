@@ -4,6 +4,8 @@ git status : It will show the files which are not staging area
 
 git add 'Filename' : It will add the file into staging area
 
+git rm(remove) --cached -r . : It will remove everything from staging area
+
 The files in staging area are ready to commit
 
 git commit -m(message) "Hello" : As message use present tense (best practice)
@@ -30,3 +32,11 @@ or push an existing repository from the command line
 git remote add origin https://github.com/RamazanAcikgoz/DevOpsTraining.git
 git branch -M main
 git push -u origin main
+
+--------------------------------------------------------------------------------------------------------------------
+GIT IGNORE
+
+Stuff that we don't want to commit or host it on github
+OS generated files (.DS_Store, .Trashes ...)
+
+create git ignore --> touch .gitignore
