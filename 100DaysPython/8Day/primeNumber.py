@@ -15,3 +15,5 @@ if is_prime_checker(num):
     print(num, "is a prime number")
 else:
     print(num, "is not a prime number")
+
+    #RA
