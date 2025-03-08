@@ -4,7 +4,7 @@ import art
 # TODO-1: 
 # The decs is unlimited in size
 # There are no jokers
-# The Jack/Queen/King all couns at 10.
+# The Jack/Queen/King all counts at 10.
 # The Ace can count as 11 or 1.
 # Use the following list as the deck of cards:
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
