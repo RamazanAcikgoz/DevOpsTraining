@@ -117,4 +117,4 @@ while is_on:
     elif choice == "cappuccino":
          make_coffe(choice)
     else:
-        print("Please correct choice")
+        print("Please correct choice.")
