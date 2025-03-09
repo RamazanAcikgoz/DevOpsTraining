@@ -33,10 +33,33 @@ git remote add origin https://github.com/RamazanAcikgoz/DevOpsTraining.git
 git branch -M main
 git push -u origin main
 
---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 GIT IGNORE
 
 Stuff that we don't want to commit or host it on github
 OS generated files (.DS_Store, .Trashes ...)
 
 create git ignore --> touch .gitignore
+
+---------------------------------------------------------------------------------------------------------------------
+GIT CLONE
+
+git clone URL
+
+---------------------------------------------------------------------------------------------------------------------
+GIT BRANCH and MERGE
+
+    MAIN 1 ---> 2 ---> 3 ---> 4 ---> 5
+         \       \          /       /
+FEATURE1  \        3 --- > 4       /
+           \                      /
+FEATURE2    2 --->     3    ---> 4
+
+git branch branchName
+git branch : It will show all branches (* symbol one your current branch)
+git checkout branchName : It will change your branch
+
+git merge nameOfBranch : It will merge branch to main branch
+
+---------------------------------------------------------------------------------------------------------------------
+GIT FORK and PULL REQUEST
