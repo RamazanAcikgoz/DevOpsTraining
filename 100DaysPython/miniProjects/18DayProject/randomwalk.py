@@ -5,6 +5,8 @@ ark = Turtle()
 ark.shape("turtle")
 ark.color("black")
 ark.width(3)
+#ark.pensize(15)
+
 
 
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
