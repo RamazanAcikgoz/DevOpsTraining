@@ -2,7 +2,7 @@ from turtle import Turtle
 
 
 class Ball(Turtle):
-    # 4. Create the ball and make it move
+
     def __init__(self):
         super().__init__()
         self.color("white")
@@ -17,7 +17,6 @@ class Ball(Turtle):
         new_y = self.ycor() + self.y_move
         self.goto(new_x, new_y)
 
-    # 5. Detect collision with wall and bounce
     def bounce_y(self):
         self.y_move *= -1
 
