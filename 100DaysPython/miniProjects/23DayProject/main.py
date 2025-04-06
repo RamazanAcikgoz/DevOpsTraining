@@ -1,4 +1,4 @@
-# Angela's version
+# Angela's version to compare
 
 import time
 from turtle import Screen
