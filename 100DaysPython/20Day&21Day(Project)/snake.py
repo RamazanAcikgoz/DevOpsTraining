@@ -26,6 +26,13 @@ class Snake:
         new_square.goto(position)
         self.squares.append(new_square)
 
+    def reset(self):
+        for seg in self.squares:
+            seg.goto(1000,1000)
+        self.squares.clear()
+        self.create_snake()
+        self.head = self.squares[0]
+
     def extend(self):
         self.add_square(self.squares[-1].position())
         # Add new square to the snake
