@@ -15,6 +15,8 @@ with open('./Input/Letters/starting_letter.txt', 'r') as file:
 with open('./Input/Names/invited_names.txt', 'r') as file:
     names = [name.strip() for name in file.readlines()]
 
+print(names)
+
 # Create output letters
 for name in names:
     personalized_letter = letter_template.replace("[name]", name)
